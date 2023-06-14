@@ -915,6 +915,184 @@ O cliente pode escolher a forma de pagamento e o endereço de entrega.
 
 
 
+# Caso de uso 4: Consulta/Relátorio de vendas
+
+## Introdução:
+Este caso de uso é ativado quando o usuário seleciona a opção “Consultar Vendas” ou “Relatório de Vendas” no menu principal do sistema de gestão da hamburgueria.
+
+## Objetivo:
+Permitir que o usuário consulte informações e gere relatórios de vendas realizadas pela hamburgueria.
+
+##Requisitos funcionais:
+
+RF019
+Consultar vendas
+
+RF020
+Gerar relatório de vendas
+
+
+
+## Requisitos não funcionais:
+
+RNF009
+O módulo deverá operar somente no modo web via navegador
+
+
+## Atores: 
+
+ Administrador;
+ 
+• Gerente;
+
+• Atendente.
+
+
+## Documentos Relacionados
+
+• Diagrama de Classes – módulo de vendas;
+
+• Especificação de Requisitos – módulo de vendas.
+
+## Pre-Condições
+
+• O usuário selecionou a opção “Consultar Vendas” ou “Relatório de Vendas” no menu principal;
+
+• O sistema carregou a tela de consulta de vendas ou de geração de relatórios.
+Pós-Condições
+
+• O usuário deverá ter visualizado as informações das vendas consultadas ou gerado o relatório de vendas.
+Fluxo Principal
+
+P-1
+
+O sistema exibe a tela de consulta de vendas ou de geração de relatórios (A-1).
+
+P-2
+
+P-2 O usuário seleciona os critérios de consulta ou de geração de relatório, como período de data, tipo de venda, forma de pagamento, entre outros (A-2).
+
+P-3
+
+P-3 O usuário aciona o botão “Consultar” ou “Gerar Relatório” (A-3).
+
+P-4
+
+P-4 O sistema processa a consulta ou a geração de relatório (E-1).
+
+
+P-5
+
+P-5 O sistema exibe os resultados da consulta ou o relatório gerado (A-4).
+
+P-6
+
+P-6 Este caso de uso é finalizado.
+
+
+
+
+
+
+
+
+
+
+## Fluxos alternativos
+10.1.
+
+Tela de consulta ou geração de relatórios não carrega corretamente
+A-1.1
+
+O sistema identifica que ocorreu um erro no carregamento da tela
+A-1.2
+
+O sistema exibe uma mensagem de erro e retorna ao menu principal
+
+A-1.3
+Este caso de uso é finalizado
+
+10.2
+Usuário não preenche todos os campos obrigatórios
+
+A-2.1
+ O sistema identifica que o usuário não preencheu todos os campos obrigatórios
+ 
+A-2.2
+sistema emite a mensagem “Preencha todos os campos obrigatórios” e retorna ao fluxo principal 
+
+10.3
+ Usuário cancela a consulta ou geração de relatório
+
+
+3.1
+O usuário aciona o botão “Cancelar”
+
+
+3.2
+A-3.2 O sistema cancela a operação
+
+
+3.3
+A-3.3 Este caso de uso é finalizado
+
+
+## Fluxos de Exceção
+
+11.1. Erro ao processar consulta ou geração de relatório
+
+
+E-1.1
+O sistema identifica que ocorreu um erro ao processar a consulta ou a geração de relatório
+
+E-1.2
+O sistema exibe uma mensagem de erro e retorna ao fluxo principal 
+
+## Protótipos de Tela
+
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/7d4bff09-f13f-4baa-a734-6ba72c62b74d)
+
+
+
+
+## Regras de negócio
+
+R-1
+
+R-1 O relatório de vendas só pode ser gerado por usuários com permissão de gerente.
+
+R-2
+
+R-2 O relatório deverá conter as informações de vendas do período selecionado pelo usuário.
+
+R-3
+
+R-3 O relatório deverá ser gerado em formato PDF e disponibilizado para download.
+
+
+R-4
+
+R-4 O relatório deve ser gerado com base nas informações contidas no banco de dados do sistema.
+
+R-5
+
+R-5 O usuário deverá selecionar um período para a geração do relatório de vendas
+
+R-6
+
+R-6 Caso o período selecionado seja maior que um mês, o relatório deverá ser gerado separadamente para cada mês do período selecionado.
+
+
+## PCT004 – Geração de Relatório de Vendas
+## Observações
+• Não se aplica 
+## Anexos
+• Não se aplica.
+
+
+
+
+
 
 
 
