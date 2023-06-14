@@ -446,16 +446,16 @@ O módulo deverá operar somente no modo web via navegador
 ## Documentos Relacionados
 • Diagrama de Classes – Módulo de segurança
 
-•Pré-Condições
+## Pré-Condições
 
 • O usuário ter selecionado o menu “Alterar Senha”;
 
 • O sistema ter carregado a tela “Alteração de Senha”.
 
-Pós-Condições
+## Pós-Condições
 • A senha deverá ter sido alterada na tabela “Usuario” do banco de dados.
 
-Fluxo Principal
+## Fluxo Principal
 P-1
 O sistema gera um código aleatório (captcha) e exibe no espaço da figura
 
@@ -540,12 +540,12 @@ Este caso de uso retorna ao fluxo principal (P-2)
 
 
 
-Protótipo de Tela
+## Protótipo de Tela
 
 ![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/f7950198-6ab9-4ec7-a1a4-ea401e6e265c)
 
 
-##Regras de negócio
+## Regras de negócio
 
 R-1
 O usuário não pode utilizar as 3 últimas senhas cadastradas
@@ -555,13 +555,173 @@ A senha deve conter letras maiúsculas e minúsculas, números e caracteres espe
 
 
 
-• PCT005 - Alteração de senha
+## • PCT005 - Alteração de senha
 
-Observações:
+## Observações:
 • Não se aplica
 
-Anexos:
+## Anexos:
 • Não se aplica.
+
+# Caso de uso 2 CRUD básico de produtos
+
+## Introdução
+Este caso de uso é ativado quando um usuário com privilégios de administrador ou gerente
+acessa o módulo de gestão de produtos e seleciona a opção CRUD Básico de Produtos.
+
+## Objetivo
+Permitir que um usuário com privilégios de administrador ou gerente realize operações de
+criação, leitura, atualização e exclusão (CRUD) de produtos no sistema.
+
+## Requisitos funcionais
+
+RF001 Cadastrar Produto
+
+RF002 Consultar Produto
+
+RF003 Atualizar Produto
+
+RF004 Excluir Produto
+
+
+## Requisitos não funcionais
+   
+RNF001 O sistema deve permitir a criação, atualização e exclusão de produtos em
+lote
+
+RNF002 O sistema deve permitir a importação e exportação de dados em formato
+CSV
+
+RNF003 O sistema deve permitir a ordenação e filtragem de produtos por nome,
+preço e categoria
+
+## Atores
+
+• Administrador
+
+• Gerente
+
+## Documentos relacionados
+• Diagrama de classes do módulo de gestão de produtos
+
+## Pré-condições
+• O usuário ter acesso ao módulo de gestão de produtos
+
+• O sistema ter carregado a tela inicial do CRUD básico de produtos
+
+##  Pós-condições
+• As operações de CRUD realizadas pelo usuário deverão ter sido salvas no banco de dados
+do sistema
+
+##  Fluxo principal
+P-1 O sistema exibe a lista de produtos cadastrados
+
+P-2 O usuário seleciona a opção "Cadastrar Novo Produto"
+
+P-3 O sistema exibe o formulário de cadastro de produtos
+
+P-4 O usuário preenche os campos obrigatórios e aciona o botão "Cadastrar"
+
+P-5 O sistema valida os campos preenchidos e salva o novo produto no banco de
+
+dados
+
+P-6 O sistema exibe a mensagem "Produto cadastrado com sucesso!"
+
+P-7 O usuário seleciona a opção "Consultar Produto"
+
+P-8 O sistema exibe a lista de produtos cadastrados
+
+P-9 O usuário seleciona um produto da lista e aciona o botão "Editar"
+
+P-10 O sistema exibe o formulário de edição de produtos, com os campos
+preenchidos com os valores atuais do produto
+
+P-11 O usuário atualiza os campos desejados e aciona o botão "Atualizar"
+
+P-12 O sistema valida os campos atualizados e salva as alterações no banco de
+dados
+
+P-13 O sistema exibe a mensagem "Produto atualizado com sucesso!"
+
+P-14 O usuário seleciona um produto da lista e aciona o botão "Excluir"
+
+P-15 O sistema exibe a mensagem "Tem certeza de que deseja excluir o produto
+selecionado?"
+
+P-16 O usuário confirma a exclusão do produto
+
+P-17 O sistema remove o produto selecionado do banco de dados e exibe a
+mensagem "Produto excluído com sucesso!"
+
+P-18 Este caso de uso é finalizado
+
+## Fluxos alternativos
+10.1. (A-1) Produto não encontrado
+    
+A-1.1 O sistema emite a mensagem “Produto não encontrado!”
+
+A-1.2 Este caso de uso retorna ao fluxo principal (P-1)
+
+10.2. (A-2) O usuário deseja adicionar uma imagem ao produto
+
+A-2.1 O usuário aciona o botão “Adicionar Imagem”
+
+A-2.2 O sistema exibe a tela de seleção de imagem do dispositivo
+
+A-2.3 O usuário seleciona a imagem do produto no dispositivo
+
+A-2.4 O sistema exibe a imagem selecionada na tela de cadastro do produto
+
+A-2.5 O caso de uso retorna ao fluxo principal (P-3)
+
+10.3. (A-3) O usuário deseja remover uma imagem do produto
+
+A-3.1 O usuário aciona o botão “Remover Imagem”
+
+A-3.2 O sistema exibe a mensagem “Deseja realmente remover a imagem?”
+
+A-3.3 O usuário confirma a exclusão da imagem
+
+A-3.4 O sistema remove a imagem do produto
+
+A-3.5 O caso de uso retorna ao fluxo principal (P-3)
+
+10.4. (A-4) O usuário cancela a operação de cadastro/edição de produto
+A-4.1 O usuário aciona o botão “Cancelar”
+
+A-4.2 O sistema cancela a operação
+
+A-4.3 Este caso de uso é finalizado
+
+## Fluxos de exceção
+
+11.1. (E-1) Erro ao gravar dados
+E-1.1 O sistema não consegue gravar as informações do produto no banco de dados
+E-1.2 O sistema emite a mensagem “Erro ao gravar os dados do Produto!”
+E-1.3 Este caso de uso retorna ao fluxo principal (P-3)
+11.2. (E-2) Dados inválidos
+E-2.1 O usuário não preenche ou preenche incorretamente um campo requerido
+E-2.2 O sistema emite a mensagem “Campo requerido ausente ou inválido!”
+E-2.3 Este caso de uso retorna ao fluxo principal (P-2)
+12. Protótipos de tela
+12.1
+
+##  Regras de negócio
+R-1 O sistema não deve permitir a inserção de dois produtos com o mesmo código.
+R-2 Os dados do produto devem ser armazenados em uma base de dados.
+R-3 Os produtos só poderão ser excluídos se não houverem pedidos associados.
+14. Casos de teste
+
+## • PCT006 – Consulta de Produtos
+##• PCT007 – Cadastro de Produtos
+## • PCT008 – Edição de Produtos
+##• PCT009 – Exclusão de Produtos
+## Observações
+• Não se aplica.
+
+## Anexos
+• Diagrama de Classes – módulo de produtos.
 
 
 
