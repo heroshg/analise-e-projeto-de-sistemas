@@ -1249,6 +1249,16 @@ O estoque mínimo definido para cada produto não pode ser menor que zero.
 Anexos
 • Não se aplica.
 
+# Diagrama geral dos casos de uso
+
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/66e50f4b-185a-4901-94e0-9c851383cf33)
+
+# Diagrama de Classes e Dados
+
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/af048ef1-3c69-4f63-bea0-56fbcc79f99e)
+
+
+
 
 
 
