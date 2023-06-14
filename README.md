@@ -150,5 +150,176 @@ US020.Como cliente desejo um sistema de fidelidade, é uma maneira eficaz de
 recompensar os clientes fiéis. O sistema deve permitir que os clientes acumulem pontos
 com base em suas compras e ofereça descontos e promoções exclusivas.
 
+# Requisitos Detalhados
+
+## 1.Função: Gerenciamento de pedidos em tempo real
+Descrição: O sistema deve ser capaz de gerenciar os pedidos em tempo real, permitindo
+que o atendente de pedidos possa visualizar os pedidos em tempo real, receba notificações
+de novos pedidos e atualizações, possa alterar o status dos pedidos e possa gerenciar as
+informações de pagamento.
+
+Entradas: Os dados que serão inseridos no sistema incluem o nome do cliente, o pedido, o
+método de pagamento, o status do pedido e informações de contato.
+
+Origem: Os dados são originados pelo atendente de pedidos que está recebendo os
+pedidos diretamente dos clientes.
+
+Saídas: As saídas incluem atualizações em tempo real sobre o status do pedido,
+notificações para o atendente de pedidos sobre novos pedidos ou atualizações e as
+informações de pagamento.
+
+Destino: As saídas serão entregues ao atendente de pedidos, aos clientes e ao sistema de
+pagamento.
+
+Ação: O sistema deve ser capaz de gerenciar e atualizar os pedidos em tempo real, exibir
+informações sobre o status do pedido para o atendente de pedidos e enviar notificações
+para o atendente de pedidos quando houver novos pedidos ou atualizações.
+
+Requer: O sistema requer um banco de dados para armazenar as informações do pedido,
+um mecanismo de notificação para alertar o atendente de pedidos sobre novos pedidos e
+atualizações e uma conexão estável com a Internet para permitir a transmissão de dados
+em tempo real.
+
+Pré-condição: O sistema deve estar funcionando corretamente, e o atendente de pedidos
+deve estar disponível para receber os pedidos.
+
+Pós-condição: O status do pedido deve ser atualizado em tempo real, e o atendente de
+pedidos deve ser capaz de gerenciar e atualizar o status do pedido conforme necessário.
+
+Efeitos colaterais: Pode haver uma sobrecarga no sistema em momentos de pico de
+pedidos, o que pode afetar a velocidade de processamento de pedidos. Além disso, pode
+haver uma sobrecarga na equipe de atendimento ao cliente se houver muitos pedidos a
+serem gerenciados simultaneamente.
+
+## 2.Função: Detalhe de estoque
+Descrição: Essa função tem como objetivo fornecer informações detalhadas sobre o
+estoque de ingredientes e produtos disponíveis na hamburgueria.
+
+Entradas: Não há entradas necessárias para essa função.
+
+Origem: Sistema de gerenciamento de estoque da hamburgueria.
+
+Saídas: Relatório contendo informações sobre a quantidade de cada ingrediente e produto
+disponível no estoque, data da última reposição de estoque, data prevista para a próxima
+reposição de estoque e quantidade mínima necessária para manter o estoque.
+
+Destino: Gerente de estoque da hamburgueria.
+
+Ação: O sistema de gerenciamento de estoque gera um relatório detalhado sobre o estoque
+atual dos produtos e ingredientes da hamburgueria.
+
+Pré-condição: O sistema de gerenciamento de estoque da hamburgueria deve estar
+atualizado com as informações mais recentes sobre o estoque de ingredientes e produtos.
+
+Pós-condição: O gerente de estoque recebe um relatório detalhado sobre o estoque atual da
+hamburgueria, permitindo que ele faça pedidos de reposição de estoque com antecedência
+e evite a falta de produtos em estoque.
+
+Efeitos colaterais: Não há efeitos colaterais conhecidos para essa função.
+
+## 3.Função: Gerenciar rotas eficientes para entrega dos pedidos
+Descrição: Permite ao entregador gerenciar as rotas de entrega de pedidos de forma
+eficiente, considerando a localização dos clientes e a proximidade das entregas.
+
+Entradas: Lista de pedidos a serem entregues, endereço de cada cliente e localização atual
+do entregador.
+
+Origem: Usuário do sistema.
+
+Saídas: Lista de pedidos organizada em um rota eficiente de entrega, Instruções para o
+entregador seguir a rota.
+
+Destino: Sistema de gerenciamento de entregas.
+
+Ação: O sistema deve receber a lista de pedidos e a localização do entregador, calcular a
+rota mais eficiente de entrega e fornecer as instruções para o entregador seguir a rota.
+Requer Banco de dados de pedidos, Sistema de geolocalização, Mapas digitais.
+
+Pré-condição: O entregador deve ter acesso ao sistema de gerenciamento de entregas,
+Existem pedidos registrados no banco de dados.
+
+Pós-condição: A lista de pedidos é organizada em uma rota eficiente de entrega , O
+entregador recebe as instruções para seguir a rota.
+
+Efeitos colaterais: Melhoria na eficiência da entrega, com redução do tempo e custo de
+entrega. Possibilidade de atrasos ou erros na entrega caso o sistema não calcule a rota
+mais eficiente.
+
+4.Função: Permitir que os clientes realizem o pagamento de seus
+pedidos pela internet.
+
+Descrição: O sistema de pagamentos online deve permitir que os clientes selecionem o
+método de pagamento desejado (cartão de crédito, cartão de débito, etc.) e informem os
+dados necessários para a transação, como o número do cartão, data de validade e código
+de segurança.
+
+Entradas: Método de pagamento escolhido pelo cliente
+Informações do cartão de crédito ou débito (número do cartão, data de validade e código de
+segurança),valor total do pedido.
+
+Origem: Cliente da hamburgueria.
+
+Saídas: Confirmação do pagamento bem-sucedido ou falha na transação,
+Recibo ou comprovante de pagamento,
+Atualização do status do pedido no sistema da hamburgueria (de "pendente" para
+"processando")
+
+Destinos:Plataforma de pagamento,
+Sistema de gerenciamento de pedidos da hamburgueria
+
+Ação: Realizar a transação financeira em nome do cliente.
+
+Requer: Conexão segura com a plataforma de pagamento,
+verificação de autenticidade dos dados do cartão de crédito ou débito,
+verificação de saldo ou limite disponível no cartão de crédito ou débito.
+
+Pré-condições: Cliente deve ter selecionado um pedido e estar na etapa de finalização da
+compra.
+Cliente deve ter um método de pagamento válido.
+
+Pós-condições:Pagamento bem-sucedido: o valor total do pedido é debitado do cartão do
+cliente e o status
+do pedido é atualizado para "processando".
+Falha na transação: o cliente é notificado sobre o problema e deve tentar novamente com
+um método de pagamento diferente ou verificar com a instituição financeira a causa do
+problema.
+
+Efeitos colaterais:
+O sistema deve garantir a segurança dos dados financeiros do cliente.
+O sistema deve garantir a conformidade com os padrões de segurança financeira e proteção
+ao consumidor.
+O sistema deve garantir a atualização dos dados de pagamento no sistema de
+gerenciamento de pedidos da hamburgueria.
+
+## 5.Função: Geração de relatórios detalhados sobre vendas,
+pedidos, estoque, desempenho do funcionário e outras métricas
+importantes.
+
+Descrição: O sistema deve gerar relatórios detalhados e personalizáveis para que os
+gerentes possam acessar informações importantes sobre a operação da hamburgueria.
+
+Entradas: Dados de vendas, pedidos, estoque e desempenho do funcionário.
+
+Origem: Dados gerados pelo sistema da hamburgueria.
+
+Saídas: Relatórios personalizados contendo informações detalhadas sobre vendas,
+pedidos, estoque, desempenho do funcionário e outras métricas importantes.
+
+Destinos: Gerentes da hamburgueria que precisam acessar informações para tomar
+decisões informadas sobre a operação.
+
+Ação: O sistema gera relatórios personalizados com base nos dados de entrada e as
+configurações de relatórios selecionadas pelo gerente.
+
+Requer: O sistema precisa ter acesso a dados precisos e atualizados sobre vendas,
+pedidos, estoque e desempenho do funcionário.
+
+Pré-condições: Os dados de entrada devem ser precisos e atualizados.
+
+Pós-condições: O sistema gera um relatório personalizado com base nas configurações
+selecionadas pelo gerente.
+
+Efeitos colaterais: Nenhum efeito colateral conhecido
+
 
 
