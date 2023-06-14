@@ -192,6 +192,7 @@ haver uma sobrecarga na equipe de atendimento ao cliente se houver muitos pedido
 serem gerenciados simultaneamente.
 
 ## 2.Função: Detalhe de estoque
+
 Descrição: Essa função tem como objetivo fornecer informações detalhadas sobre o
 estoque de ingredientes e produtos disponíveis na hamburgueria.
 
@@ -218,6 +219,7 @@ e evite a falta de produtos em estoque.
 Efeitos colaterais: Não há efeitos colaterais conhecidos para essa função.
 
 ## 3.Função: Gerenciar rotas eficientes para entrega dos pedidos
+
 Descrição: Permite ao entregador gerenciar as rotas de entrega de pedidos de forma
 eficiente, considerando a localização dos clientes e a proximidade das entregas.
 
@@ -245,7 +247,7 @@ Efeitos colaterais: Melhoria na eficiência da entrega, com redução do tempo e
 entrega. Possibilidade de atrasos ou erros na entrega caso o sistema não calcule a rota
 mais eficiente.
 
-4.Função: Permitir que os clientes realizem o pagamento de seus
+## 4.Função: Permitir que os clientes realizem o pagamento de seus
 pedidos pela internet.
 
 Descrição: O sistema de pagamentos online deve permitir que os clientes selecionem o
@@ -280,14 +282,17 @@ Cliente deve ter um método de pagamento válido.
 Pós-condições:Pagamento bem-sucedido: o valor total do pedido é debitado do cartão do
 cliente e o status
 do pedido é atualizado para "processando".
+
 Falha na transação: o cliente é notificado sobre o problema e deve tentar novamente com
 um método de pagamento diferente ou verificar com a instituição financeira a causa do
 problema.
 
 Efeitos colaterais:
 O sistema deve garantir a segurança dos dados financeiros do cliente.
+
 O sistema deve garantir a conformidade com os padrões de segurança financeira e proteção
 ao consumidor.
+
 O sistema deve garantir a atualização dos dados de pagamento no sistema de
 gerenciamento de pedidos da hamburgueria.
 
