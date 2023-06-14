@@ -713,13 +713,13 @@ R-2 Os dados do produto devem ser armazenados em uma base de dados.
 R-3 Os produtos só poderão ser excluídos se não houverem pedidos associados.
 14. Casos de teste
 
-## • PCT006 
+##  PCT006 
 – Consulta de Produtos
-##• PCT007 
+## PCT007 
 – Cadastro de Produtos
-## • PCT008
+##  PCT008
 – Edição de Produtos
-##• PCT009 
+## PCT009 
 – Exclusão de Produtos
 ## Observações
 • Não se aplica.
