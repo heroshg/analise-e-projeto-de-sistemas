@@ -67,7 +67,8 @@ Adicionar opção de pedido em grupo (para festas e eventos)
 
 #Fluxogramas
 
-#"As is "
+#"As is"
+
 ![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/e6ad3c81-c283-4517-a185-cefdd48ed056)
 
 
