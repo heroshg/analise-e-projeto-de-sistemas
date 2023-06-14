@@ -75,5 +75,80 @@ Adicionar opção de pedido em grupo (para festas e eventos)
 
 ![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/87f07752-e6da-4410-a29f-496e71b3375f)
 
+# Requisitos Funcionais
+
+US001.Como um cliente, eu quero ser capaz de fazer pedidos personalizados de
+hambúrgueres, para que eu possa ter um sanduíche que atenda às minhas preferências e
+restrições alimentares.
+
+US002.Como um cliente, eu quero poder visualizar o cardápio e as opções de ingredientes
+claramente, para que eu possa tomar uma decisão informada sobre o que pedir.
+
+US003.Como um atendente de pedidos, eu quero ser capaz de gerenciar pedidos e
+atualizações em tempo real, para que eu possa atender aos pedidos de forma rápida e
+eficiente.
+
+US004.Como gerente de restaurante, eu quero ser capaz de gerenciar os estoques de
+ingredientes e produtos, para que eu possa garantir que os produtos estejam disponíveis e
+que não falte estoque.
+
+US005.Como cliente, eu gostaria de poder visualizar o status atual do meu pedido para que
+eu possa acompanhar o progresso da minha entrega e saber quando meu pedido será
+concluído.
+
+US006.Como gerente de estoque, eu gostaria de poder receber alertas automáticos quando
+um produto atingir o nível mínimo de estoque para que eu possa fazer o pedido de
+reposição com antecedência e evitar a falta de produtos em estoque.
+
+US007.Como cliente de uma hamburgueria, eu gostaria de poder fazer um pedido online,
+para evitar filas e agilizar o processo de compra.
+
+US008.Como gerente, eu gostaria de poder gerar relatórios personalizados que apresentem
+informações detalhadas sobre as vendas, lucros e desempenho financeiro da empresa,
+para que eu possa monitorar a saúde financeira do negócio, identificar tendências e tomar
+decisões informadas com base nos dados apresentados.
+
+US009.Como entregador, eu quero um sistema que seja capaz de gerenciar rotas eficientes
+de entrega, para minimizar o tempo gasto na entrega dos pedidos.
+
+US010.Como entregador, eu quero um sistema que seja capaz de realizar um controle
+logístico e de identificação dos pedidos validados por QR code, para que não ocorra de o
+cliente receber o pedido trocado ou faltando algum item.
+
+US011.Como entregador, eu quero um sistema capaz de realizar um gerenciamento de
+prioridade de pedidos, para que os pedidos que estão atrasados ou com prazo de entrega
+mais curto sejam listados primeiro na ordem de entrega.
+
+US012.Como entregador, eu quero um sistema capaz de atualizar o status dos pedidos em
+tempo real, para que seja possível o cliente ver a confirmação de retirada, tempo estimado
+de chegada e a confirmação da entrega.
+
+US013.Como cliente, eu quero poder fazer uma pré-encomenda com antecedência para que
+meu pedido esteja pronto quando eu chegar à hamburgueria, evitando a espera na fila.
+US014.Como cliente, quero que disponibilize um sistema de promoções e cupões para
+fornecer desconto aos clientes.
+
+US015.Como cliente, quero que disponibilize um sistema de rastreamento para o meu
+pedido, onde eu consiga localizar em tempo real meu lanche.
+
+US016.Como cliente quero um sistema que disponibiliza fazer pagamentos online ou
+quando é retirado na residência.
+
+US017.Como cliente desejo um sistema que deve permitir que os funcionários registrem
+sua presença e gerenciem seu horário de trabalho. Também deve permitir que o gerente
+atribua tarefas e monitore o desempenho de cada membro da equipe.
+
+US018.Como cliente desejo um sistema que deve gerar relatórios detalhados sobre vendas,
+pedidos, estoque, desempenho do funcionário e outras métricas importantes. Esses
+relatórios ajudam os gerentes a tomar decisões informadas sobre a operação.
+
+US019.Como cliente desejo um sistema que deve ser integrado com as redes sociais da
+hamburgueria, permitindo que os clientes compartilhem suas experiências, visualizem fotos
+de pratos e façam comentários.
+
+US020.Como cliente desejo um sistema de fidelidade, é uma maneira eficaz de
+recompensar os clientes fiéis. O sistema deve permitir que os clientes acumulem pontos
+com base em suas compras e ofereça descontos e promoções exclusivas.
+
 
 
