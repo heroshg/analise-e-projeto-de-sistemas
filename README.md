@@ -437,23 +437,23 @@ O módulo deverá operar somente no modo web via navegador
 
 ## Atores: 
 
-• Administrador
+Administrador
 
-• Atendente
+ Atendente
 
-•Gerente
+Gerente
 
 ## Documentos Relacionados
-• Diagrama de Classes – Módulo de segurança
+ Diagrama de Classes – Módulo de segurança
 
 ## Pré-Condições
 
-• O usuário ter selecionado o menu “Alterar Senha”;
+ O usuário ter selecionado o menu “Alterar Senha”;
 
-• O sistema ter carregado a tela “Alteração de Senha”.
+ O sistema ter carregado a tela “Alteração de Senha”.
 
 ## Pós-Condições
-• A senha deverá ter sido alterada na tabela “Usuario” do banco de dados.
+ A senha deverá ter sido alterada na tabela “Usuario” do banco de dados.
 
 ## Fluxo Principal
 P-1
@@ -555,13 +555,13 @@ A senha deve conter letras maiúsculas e minúsculas, números e caracteres espe
 
 
 
-## • PCT005 - Alteração de senha
+##  PCT005 - Alteração de senha
 
 ## Observações:
-• Não se aplica
+ Não se aplica
 
 ## Anexos:
-• Não se aplica.
+ Não se aplica.
 
 # Caso de uso 2 CRUD básico de produtos
 
@@ -597,20 +597,20 @@ preço e categoria
 
 ## Atores
 
-• Administrador
+Administrador
 
-• Gerente
+Gerente
 
 ## Documentos relacionados
-• Diagrama de classes do módulo de gestão de produtos
+Diagrama de classes do módulo de gestão de produtos
 
 ## Pré-condições
 • O usuário ter acesso ao módulo de gestão de produtos
 
-• O sistema ter carregado a tela inicial do CRUD básico de produtos
+O sistema ter carregado a tela inicial do CRUD básico de produtos
 
 ##  Pós-condições
-• As operações de CRUD realizadas pelo usuário deverão ter sido salvas no banco de dados
+ As operações de CRUD realizadas pelo usuário deverão ter sido salvas no banco de dados
 do sistema
 
 ##  Fluxo principal
@@ -697,20 +697,33 @@ A-4.3 Este caso de uso é finalizado
 ## Fluxos de exceção
 
 11.1. (E-1) Erro ao gravar dados
+
 E-1.1 O sistema não consegue gravar as informações do produto no banco de dados
+
 E-1.2 O sistema emite a mensagem “Erro ao gravar os dados do Produto!”
+
 E-1.3 Este caso de uso retorna ao fluxo principal (P-3)
+
 11.2. (E-2) Dados inválidos
+
 E-2.1 O usuário não preenche ou preenche incorretamente um campo requerido
+
 E-2.2 O sistema emite a mensagem “Campo requerido ausente ou inválido!”
+
 E-2.3 Este caso de uso retorna ao fluxo principal (P-2)
-12. Protótipos de tela
-12.1
+
+12. Protótipo de tela  
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/9a9cdbed-5b74-4606-8cab-3bc80fe60b61)
+
 
 ##  Regras de negócio
+
 R-1 O sistema não deve permitir a inserção de dois produtos com o mesmo código.
+
 R-2 Os dados do produto devem ser armazenados em uma base de dados.
+
 R-3 Os produtos só poderão ser excluídos se não houverem pedidos associados.
+
 14. Casos de teste
 
 ##  PCT006 
