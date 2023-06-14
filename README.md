@@ -717,7 +717,7 @@ E-2.2 O sistema emite a mensagem “Campo requerido ausente ou inválido!”
 
 E-2.3 Este caso de uso retorna ao fluxo principal (P-2)
 
-12. Protótipo de tela  
+## 12. Protótipo de tela  
 ![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/9a9cdbed-5b74-4606-8cab-3bc80fe60b61)
 
 
@@ -995,14 +995,6 @@ P-6
 P-6 Este caso de uso é finalizado.
 
 
-
-
-
-
-
-
-
-
 ## Fluxos alternativos
 10.1.
 
@@ -1093,6 +1085,172 @@ R-6 Caso o período selecionado seja maior que um mês, o relatório deverá ser
 • Não se aplica 
 ## Anexos
 • Não se aplica.
+
+# Caso de uso 5 Gerenciamento de estoque
+
+##Introdução:
+
+Este caso de uso é ativado quando o usuário seleciona a opção "Gerenciamento de Estoque" no menu "Administração" do sistema
+
+## Objetivo:
+
+Possibilitar que o usuário gerencie o estoque de produtos da hamburgueria.
+
+## Requisitos funcionais:
+RF003 
+Consultar estoque
+
+RF004
+Adicionar produto ao estoque
+
+RF005
+Alterar quantidade de produto no estoque
+
+RF006
+Remover produto do estoque
+
+
+
+
+
+
+## Requisitos não funcionais:
+RNF003
+O módulo deverá operar somente no modo web via navegador
+
+
+## Atores: 
+
+• Administrador
+
+• Gerente
+
+## Documentos Relacionados
+
+• Diagrama de Classes – Módulo de Estoque
+Pré-Condições
+• O usuário ter selecionado o menu "Gerenciamento de Estoque".
+• O sistema ter carregado a tela "Gerenciamento de Estoque".
+
+## Pós-Condições
+• O estoque deverá ter sido atualizado na tabela "Produto" do banco de dado.
+
+Fluxo Principal
+
+P-1
+O usuário seleciona a opção "Consultar estoque"
+
+P-2
+O sistema exibe uma lista com os produtos cadastrados e suas respectivas quantidades em estoque
+
+P-3
+O usuário seleciona a opção "Adicionar produto"
+
+P-4
+O sistema exibe a tela "Adicionar produto ao estoque"
+
+P-5
+O usuário preenche os campos com as informações do produto (nome, quantidade, valor unitário, fornecedor, validade) e aciona o botão "Adicionar"
+
+P-6
+O sistema valida as informações e atualiza a tabela "Produto"
+
+P-7
+ O sistema exibe a mensagem "Produto adicionado ao estoque com sucesso"
+ 
+P-8
+Este caso de uso é finalizado.
+
+
+## Fluxos alternativos
+
+10.1. O usuário seleciona a opção "Alterar quantidade de produto"
+
+A-1.1 O sistema exibe a tela "Alterar quantidade de produto no estoque"
+
+A-1.2 O usuário seleciona o produto a ser alterado e preenche a nova quantidade
+
+A-1.3 O sistema valida as informações e atualiza a tabela "Produto"
+
+A-1.4 O sistema exibe a mensagem "Quantidade de produto alterada com sucesso"
+
+A-1.5 Este caso de uso retorna ao fluxo principal (P-2)
+
+10.2. O usuário seleciona a opção "Remover produto"
+
+A-2.1 O sistema exibe a tela "Remover produto do estoque"
+
+A-2.2 O usuário seleciona o produto a ser removido e aciona o botão "Remover"
+
+A-2.3 O sistema valida as informações e atualiza a tabela "Produto"
+
+A-2.4 O sistema exibe a mensagem "Produto removido do estoque com sucesso"
+
+A-2.5 Este caso de uso retorna ao fluxo principal (P-2)
+
+## Fluxos de Exceção
+
+11.1. (E-1) Quantidade Inválida
+
+E-1.1 O sistema identifica que a quantidade fornecida é inválida
+
+E-1.2 O sistema emite a mensagem “Quantidade inválida!”
+
+E-1.3 Este caso de uso retorna ao fluxo principal (P-3)
+
+11.2. (E-2) Produto Não Encontrado
+
+E-2.1 O sistema não encontra o produto informado
+
+E-2.2 O sistema emite a mensagem “Produto não encontrado!”
+
+E-2.3 Este caso de uso retorna ao fluxo principal (P-2)
+
+11.3. (E-3) Falha ao Atualizar Estoque
+
+E-3.1 O sistema identifica que ocorreu uma falha ao atualizar o estoque
+
+E-3.2 O sistema emite a mensagem “Falha ao atualizar o estoque!”
+
+E-3.3 Este caso de uso retorna ao fluxo principal (P-4)
+
+
+
+
+
+## Protótipos de Tela
+
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/3fc1432d-5659-40af-9a07-415832f433fb)
+
+
+
+
+## Regras de negócio
+
+R-1
+ Apenas usuários com perfil de administrador podem acessar esta função.
+ 
+R-2
+O estoque mínimo definido para cada produto não pode ser menor que zero.
+
+
+
+
+
+
+## Casos de teste
+
+• PCT005 – Adicionar Produto ao Estoque
+• PCT006 – Atualizar Produto no Estoque
+• PCT007 – Remover Produto do Estoque
+## Observações
+• Não se aplica.
+
+Anexos
+• Não se aplica.
+
+
+
 
 
 
