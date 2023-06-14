@@ -64,4 +64,6 @@ Adicionar opção de pedido em grupo (para festas e eventos)
 19: Adicionar opção de acompanhamento de status do pedido pelo cliente
 
 20: Implementar sistema de gestão de funcionários e controle de escalas de trabalho
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/e6ad3c81-c283-4517-a185-cefdd48ed056)
+
 
