@@ -7,3 +7,9 @@ Damos as boas-vindas à distinta audiência à apresentação do nosso notável 
 
 Por meio dessa poderosa ferramenta tecnológica, temos a convicção de que sua estimada hamburgueria será capaz de aprimorar suas operações, otimizar processos e, acima de tudo, proporcionar uma experiência singular aos clientes, mergulhando-os em uma jornada verdadeiramente memorável.
 
+## Heros - 33806632
+Isaac - 33941904
+Marcos Alves- 34241094
+Marcos Paulo - 33897093
+Samuel - 34207716
+
