@@ -407,9 +407,7 @@ hamburgueria, de modo a não comprometer a sua rentabilidade.
 
 # Casos de Uso
 
-## Caso de uso 1: Alteração de senha
-
-# Caso de Uso: Alteração de senha
+# Caso de uso 1: Alteração de senha
 
 ## Introdução:
 Este caso de uso é ativado quando o usuário selecionar a opção “Alterar Senha” dentro do
@@ -738,7 +736,182 @@ R-3 Os produtos só poderão ser excluídos se não houverem pedidos associados.
 • Não se aplica.
 
 ## Anexos
+
 • Diagrama de Classes – módulo de produtos.
+
+# Caso de uso 3 Função Core de Pedidos
+
+## Introdução:
+Este caso de uso é ativado quando o usuário seleciona a opção "Fazer Pedido" no menu principal do aplicativo da hamburgueria.
+
+## Objetivo:
+Possibilitar que o usuário faça um pedido de produtos da hamburgueria.
+
+## Requisitos funcionais:
+
+RF003 
+Selecionar produto
+
+RF004
+Adicionar produto ao carrinho 
+
+RF005
+Remover produto do carrinho 
+
+RF006
+Ver carrinho
+
+RF007
+Finalizar pedido
+
+
+## Requisitos não funcionais:
+
+RNF003
+O aplicativo deverá operar em smartphones com sistema operacional iOS e Android.
+
+RNF005
+O aplicativo deverá ser capaz de atualizar dinamicamente os preços dos produtos em tempo real.
+
+
+## Atores: 
+
+• Usuário
+
+• Funcionário da Hamburgueria
+
+## Documentos Relacionados
+
+• Diagrama de Classes – Módulo de Pedidos
+
+Pré-Condições
+
+• O usuário deve ter acessado o aplicativo da hamburgueria.
+• O usuário deve estar autenticado no aplicativo.
+
+## Pós-Condições
+
+• O pedido deverá ter sido registrado no banco de dados da hamburgueria.
+
+• O usuário deverá ser redirecionado para a tela de confirmação do pedido.
+
+## Fluxo Principal
+
+P-1
+O sistema exibe a lista de produtos disponíveis.
+
+P-2
+O usuário seleciona um ou mais produtos.
+
+P-3
+O usuário adiciona os produtos selecionados ao carrinho.
+
+P-4
+O sistema exibe o carrinho com os produtos adicionados.
+
+P-5
+O usuário remove algum produto do carrinho (se necessário).
+
+P-6
+O usuário finaliza o pedido.
+P-7
+O sistema exibe a tela de confirmação do pedido e registra o pedido no banco de dados da hamburgueria.
+
+P-8
+Este caso de uso é finalizado.
+
+
+## Fluxos alternativos
+
+10.1.
+O usuário decide cancelar o pedido.
+
+A-1.1
+O usuário clica no botão "Cancelar Pedido".
+
+A-1.2
+O sistema cancela o pedido e redireciona o usuário para a tela principal do aplicativo.
+
+A-1.3
+Este caso de uso é finalizado.
+
+10.2
+O usuário decide adicionar mais produtos.
+
+A-2.1
+O usuário clica no botão "Continuar Comprando".
+
+A-2.2
+O sistema redireciona o usuário para a lista de produtos disponíveis.
+
+A-2.3
+Este caso de uso retorna ao passo P-1.
+
+
+## Fluxos de Exceção
+
+11.1.
+O produto selecionado não está disponível.
+
+E-1.1
+O sistema identifica que o produto selecionado não está mais disponível.
+
+E-1.2
+O sistema emite a mensagem "Produto não disponível no momento".
+
+E-1.3
+Este caso de uso retorna ao passo P-2.
+
+11.2
+O carrinho está vazio.
+
+E-2.1
+O sistema identifica que o carrinho está vazio.
+
+E-2.2
+O sistema emite a mensagem "Carrinho Vazio".
+
+E-2.3
+Este caso de uso retorna ao passo P-1.
+
+11.3.
+O usuário tenta finalizar o pedido sem ter adicionado nenhum produto.
+
+E-3.1
+O sistema identifica que o usuário tentou finalizar o pedido sem ter adicionado nenhum produto
+
+
+
+
+
+
+
+## Protótipos de Tela
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/076c2889-d5da-4d61-ae57-35cc93b0e256)
+
+
+## Regras de negócio
+
+R-1
+Os produtos adicionados ao pedido não podem ultrapassar o valor máximo permitido pelo cliente.
+
+R-2
+O pedido deve conter pelo menos um produto.
+
+R-3
+O cliente pode escolher a forma de pagamento e o endereço de entrega.
+
+
+## PCT003 - Realizar Pedido
+
+## Observações
+• O pedido só será efetivado após a confirmação do pagamento pelo cliente.
+
+## Anexos
+• Não se aplica.
+
+
+
 
 
 
