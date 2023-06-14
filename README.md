@@ -407,6 +407,7 @@ hamburgueria, de modo a não comprometer a sua rentabilidade.
 
 # Casos de Uso
 
+
 # Caso de uso 1: Alteração de senha
 
 ## Introdução:
@@ -560,6 +561,7 @@ A senha deve conter letras maiúsculas e minúsculas, números e caracteres espe
 
 ## Anexos:
  Não se aplica.
+ 
 
 # Caso de uso 2 CRUD básico de produtos
 
@@ -738,6 +740,7 @@ R-3 Os produtos só poderão ser excluídos se não houverem pedidos associados.
 ## Anexos
 
 • Diagrama de Classes – módulo de produtos.
+
 
 # Caso de uso 3 Função Core de Pedidos
 
