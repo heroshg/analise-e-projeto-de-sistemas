@@ -1257,6 +1257,13 @@ Anexos
 
 ![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/af048ef1-3c69-4f63-bea0-56fbcc79f99e)
 
+# Diagramas de sequência
+
+## Caso de uso Alteração de senha
+
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/92d8e48d-6cb0-46ab-8eb5-60bbe91e81ca)
+
+
 
 
 
