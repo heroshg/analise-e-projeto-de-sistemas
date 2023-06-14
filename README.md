@@ -1270,6 +1270,7 @@ Anexos
 
 ## Caso de uso 3: Função Core de Pedidos
 
+
 ![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/bcfe3d34-df96-499f-b38c-92e8f92b30f0)
 
 
