@@ -1249,9 +1249,12 @@ O estoque mínimo definido para cada produto não pode ser menor que zero.
 Anexos
 • Não se aplica.
 
+
 # Diagrama geral dos casos de uso
 
+
 ![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/66e50f4b-185a-4901-94e0-9c851383cf33)
+
 
 # Diagrama de Classes e Dados
 
@@ -1259,7 +1262,8 @@ Anexos
 
 # Diagramas de sequência
 
-## Caso de uso Alteração de senha
+
+## Caso de uso 1:  Alteração de senha
 
 ![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/92d8e48d-6cb0-46ab-8eb5-60bbe91e81ca)
 
