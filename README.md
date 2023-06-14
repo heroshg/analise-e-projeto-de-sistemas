@@ -405,5 +405,166 @@ sistema de gerenciamento de estoque ou o sistema de gerenciamento de funcionári
 RNF020. Custo: O sistema deve ser econômico e oferecer um bom custo-benefício para a
 hamburgueria, de modo a não comprometer a sua rentabilidade.
 
+# Casos de Uso
+
+## Caso de uso 1: Alteração de senha
+
+# Caso de Uso: Alteração de senha
+
+## Introdução:
+Este caso de uso é ativado quando o usuário selecionar a opção “Alterar Senha” dentro do
+menu “Usuário” no módulo web.
+
+## Objetivo:
+Possibilitar que o usuário altere a senha de acesso ao sistema.
+
+##Requisitos funcionais:
+
+RF016
+Consultar acesso
+
+RF018
+Alterar senha
+
+RF025
+Recuperar acesso
+
+
+##Requisitos não funcionais:
+
+RNF008
+O módulo deverá operar somente no modo web via navegador
+
+## Atores: 
+
+• Administrador
+
+• Atendente
+
+•Gerente
+
+## Documentos Relacionados
+• Diagrama de Classes – Módulo de segurança
+
+•Pré-Condições
+
+• O usuário ter selecionado o menu “Alterar Senha”;
+
+• O sistema ter carregado a tela “Alteração de Senha”.
+
+Pós-Condições
+• A senha deverá ter sido alterada na tabela “Usuario” do banco de dados.
+
+Fluxo Principal
+P-1
+O sistema gera um código aleatório (captcha) e exibe no espaço da figura
+
+P-2
+O usuário preenche sua identificação (usuário), a senha atual, a nova senha, a confirmação
+da nova senha e os caracteres do código aleatório (A-1) (A-2)
+
+P-3
+O usuário aciona o botão “Confirmar” (A-3)
+
+P-4
+O sistema valida a senha (E-1) (E-2)
+
+P-5
+O sistema emite a mensagem “Senha alterada com sucesso.”
+
+P-6
+Este caso de uso é finalizado
+
+
+## Fluxos alternativos
+
+10.1.
+(A-1) O usuário não lembra do usuário ou senha
+
+A-1.1
+O usuário aciona o botão (esqueci usuário/senha)
+
+A-1.2
+O caso de uso “UC006 – Recuperar usuário/senha” é iniciado
+
+A-1.3
+Este caso de uso é finalizado.
+
+10.2
+(A-2) O usuário não visualiza código aleatório
+
+A-2.1
+O usuário aciona o botão “Não consegui visualizar”
+
+A-2.2
+Este caso de uso retorna ao fluxo principal (P-1)
+
+10.3
+(A-3) O usuário cancela a alteração
+
+A-3.1 O usuário aciona o botão “Cancelar”
+
+A-3.2 O sistema cancela a operação
+
+A-3.3 Este caso de uso é finalizado
+
+
+## Fluxos de Exceção
+11.1.
+(E-1) Confirmação de senha nova não confere com a nova senha
+
+E-1.1
+O sistema identifica que a nova senha fornecida e a confirmação da senha são diferentes
+
+E-1.2
+O sistema emite a mensagem “A confirmação da Nova Senha não confere!”
+
+E-1.3
+Este caso de uso retorna ao fluxo principal (P-2)
+
+11.2
+(E-2) Campo Requerido Não Fornecido ou Inválido
+
+E-2.1
+O usuário não preenche ou preenche incorretamente um campo requerido
+
+E-2.2
+O sistema emite a mensagem “Campo requerido ausente ou inválido!”
+
+E-2.3
+Este caso de uso retorna ao fluxo principal (P-2)
+
+
+
+
+
+
+
+Protótipo de Tela
+
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/f7950198-6ab9-4ec7-a1a4-ea401e6e265c)
+
+
+##Regras de negócio
+
+R-1
+O usuário não pode utilizar as 3 últimas senhas cadastradas
+
+R-2
+A senha deve conter letras maiúsculas e minúsculas, números e caracteres especiais
+
+
+
+• PCT005 - Alteração de senha
+
+Observações:
+• Não se aplica
+
+Anexos:
+• Não se aplica.
+
+
+
+
 
 
