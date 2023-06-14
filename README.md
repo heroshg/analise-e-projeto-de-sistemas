@@ -321,5 +321,89 @@ selecionadas pelo gerente.
 
 Efeitos colaterais: Nenhum efeito colateral conhecido
 
+# Requisitos não-funcionais
+
+RNF001.Usabilidade: O sistema deve ser fácil de usar e entender, com uma interface clara
+e intuitiva para os usuários. Isso inclui botões grandes e bem posicionados, uma linguagem
+clara e concisa e feedback visual para confirmar as ações do usuário.
+
+RNF002.Desempenho: O sistema deve ser capaz de lidar com picos de tráfego e processar
+pedidos rapidamente. Isso inclui um tempo de resposta rápido, capacidade de
+processamento e armazenamento suficiente para lidar com grandes volumes de dados.
+
+RNF003.Segurança: O sistema deve ser seguro e protegido contra ameaças externas,
+como hackers e malware. Isso inclui criptografia de dados, autenticação de usuários e
+backups regulares para evitar a perda de dados em caso de falhas de segurança.
+
+RNF004. Portabilidade: O sistema deve ser portátil e funcionar em diferentes dispositivos e
+plataformas. Isso significa que o sistema deve ser compatível com diferentes navegadores,
+sistemas operacionais e dispositivos móveis.
+
+RNF005. Escalabilidade: Um software de hamburgueria deve ser capaz de lidar com um
+grande volume de pedidos e clientes. Isso significa que ele deve ser escalável e capaz de
+se adaptar a picos de tráfego sem afetar a qualidade do serviço. Além disso, deve ser
+possível adicionar novos recursos e funcionalidades para atender às necessidades em
+constante mudança do negócio.
+
+RNF006. Disponibilidade: O software de hamburgueria deve estar disponível o tempo todo
+para garantir que os pedidos possam ser feitos e processados a qualquer hora do dia. Para
+isso, é preciso garantir que o software esteja hospedado em servidores confiáveis e tenha
+redundância em caso de falhas.
+
+RNF007. Facilidade de manutenção: Um software de hamburgueria deve ser fácil de manter
+e atualizar. Isso significa que ele deve ter um código limpo e modular, documentação clara e
+ferramentas de diagnóstico para identificar e corrigir problemas rapidamente.
+
+RNF008. Integração com outros sistemas: É importante que o software de hamburgueria
+possa se integrar com outros sistemas, como sistemas de pagamento, sistemas de entrega
+e sistemas de gerenciamento de estoque. Isso permite que o negócio possa operar de
+forma mais eficiente e integrada.
+
+RNF009. Desempenho: A hamburgueria deve garantir que o tempo de resposta do sistema
+seja adequado e que não ocorram interrupções ou quedas de conexão durante o processo
+de atendimento. Isso inclui a rapidez na preparação dos pedidos e a agilidade no
+processamento do pagamento.
+
+RNF010. Conformidade: A hamburgueria deve estar em conformidade com as leis e
+regulamentações aplicáveis, como normas de segurança alimentar, de acessibilidade, de
+saúde ocupacional, entre outras. Também deve cumprir com as normas éticas, sociais e
+ambientais, tais com a utilização de insumos sustentáveis, a valorização de trabalhadores e
+fornecedores, e o uso de tecnologia que minimize o impacto ambiental)
+
+RNF011. Segurança: A hamburgueria deve garantir a segurança dos clientes e dos
+funcionários. Isso inclui medidas como a higiene adequada dos alimentos, o controle da
+temperatura e o armazenamento correto dos ingredientes, a segurança contra incêndios e o
+controle do acesso aos equipamentos perigosos.
+
+RNF012. Confiabilidade: A hamburgueria deve ser confiável e estar disponível para os
+clientes a qualquer momento. Isso pode incluir o uso de sistemas de backup, redundância
+de servidores, monitoramento constante da disponibilidade do sistema, entre outras
+medidas para garantir a disponibilidade e confiabilidade do sistema.
+
+RNF013. Portabilidade: O sistema do aplicativo deve ser programado em java, para ser
+mais fácil caso precise de uma alteração dentro do código.
+
+RNF014. Desempenho: O app deverá ter um tempo de resposta de menos de 1 minuto para
+dar mais dinamismos nas ações dentro do aplicativo.
+
+RNF015. Segurança: O aplicativo deverá ter um sistema de proteção contra ataque
+externos,onde ele identifica e impede o invasor.
+
+RNF016. Usabilidade: O aplicativo deverá ser fácil e interativo, para um melhor
+entendimento quando for utilizá-lo.
+
+RNF017. Adaptabilidade: o sistema deve ser capaz de se adaptar às necessidades
+específicas da hamburgueria, permitindo personalização e configuração de acordo com as
+preferências do cliente.
+
+RNF018. Acessibilidade: o sistema deve ser acessível para pessoas com deficiência,
+incluindo recursos como opções de áudio e suporte para leitores de tela.
+
+RNF019. Integração: O sistema deve ser capaz de se integrar com outros sistemas, como o
+sistema de gerenciamento de estoque ou o sistema de gerenciamento de funcionários.
+
+RNF020. Custo: O sistema deve ser econômico e oferecer um bom custo-benefício para a
+hamburgueria, de modo a não comprometer a sua rentabilidade.
+
 
 
