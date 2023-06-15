@@ -1259,7 +1259,8 @@ Anexos
 
 # Diagrama de Classes e Dados
 
-![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/4d25f122-d816-4713-ad6b-3989bd818e32)
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/f2c5fce9-4235-464a-9da9-c1a61ba674f1)
+
 
 
 # Diagramas de sequência
