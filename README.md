@@ -1269,7 +1269,9 @@ Anexos
 
 ## Caso de uso 1:  Alteração de senha
 
-![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/92d8e48d-6cb0-46ab-8eb5-60bbe91e81ca)
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/98a752a5-3f78-458c-8e89-a8a0d11f704b)
+
+
 
 
 ## Caso de uso 3: Função Core de Pedidos
