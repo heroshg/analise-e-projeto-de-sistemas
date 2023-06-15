@@ -1250,10 +1250,11 @@ Anexos
 • Não se aplica.
 
 
-# Diagrama geral dos casos de uso
+# Diagrama geral de casos de uso
 
 
-![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/66e50f4b-185a-4901-94e0-9c851383cf33)
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/91bb58c8-db5e-4ab6-8a18-776944242ef9)
+
 
 
 # Diagrama de Classes e Dados
