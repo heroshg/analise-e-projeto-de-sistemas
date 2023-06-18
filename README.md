@@ -1259,7 +1259,8 @@ Anexos
 
 # Diagrama de Classes e Dados
 
-![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/c319ae43-f396-484b-861e-89b22fa17eb5)
+![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/31f4a1bb-2d62-4810-917e-dd16684d2dfb)
+
 
 
 
@@ -1267,9 +1268,7 @@ Anexos
 # Diagramas de sequência
 
 
-## Caso de uso 1:  Alteração de senha
 
-![image](https://github.com/heroshg/analise-e-projeto-de-sistemas/assets/114421814/98a752a5-3f78-458c-8e89-a8a0d11f704b)
 
 
 
